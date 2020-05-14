@@ -17,6 +17,7 @@
 		BB23219B246B8F3400F9E232 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB232199246B8F3400F9E232 /* LaunchScreen.storyboard */; };
 		BBACC91C246BABB500A6F752 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = BBACC91A246BABB500A6F752 /* 2.json */; };
 		BBACC91D246BABB500A6F752 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = BBACC91B246BABB500A6F752 /* 1.json */; };
+		BBBBB9EB246BC014009BAE6A /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = BBBBB9EA246BC014009BAE6A /* 3.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		BB23219C246B8F3400F9E232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBACC91A246BABB500A6F752 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
 		BBACC91B246BABB500A6F752 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		BBBBB9EA246BC014009BAE6A /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				BB23219C246B8F3400F9E232 /* Info.plist */,
 				BBACC91B246BABB500A6F752 /* 1.json */,
 				BBACC91A246BABB500A6F752 /* 2.json */,
+				BBBBB9EA246BC014009BAE6A /* 3.json */,
 			);
 			path = Swift_travel;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				BBACC91D246BABB500A6F752 /* 1.json in Resources */,
 				BBACC91C246BABB500A6F752 /* 2.json in Resources */,
 				BB23219B246B8F3400F9E232 /* LaunchScreen.storyboard in Resources */,
+				BBBBB9EB246BC014009BAE6A /* 3.json in Resources */,
 				BB232198246B8F3400F9E232 /* Assets.xcassets in Resources */,
 				BB232196246B8F3300F9E232 /* Main.storyboard in Resources */,
 			);
@@ -391,6 +395,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Swift_travel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,6 +414,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Swift_travel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

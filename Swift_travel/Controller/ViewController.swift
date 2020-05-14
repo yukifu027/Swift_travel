@@ -14,9 +14,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     
     
-    var onboardArray = ["1","2"]
+    var onboardArray = ["1","2","3"]
 
-    var onboardStringArray = ["世界と出逢おう","歴史を知れば、旅はもっと面白い"]
+    var onboardStringArray = ["世界と出逢おう","歴史を知れば、旅はもっと面白い","Let's get started!"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.isPagingEnabled = true
         setUpScroll()
 
-        for i in 0...1{
+        for i in 0...2{
 
             let animationView = AnimationView()
             let animation = Animation.named(onboardArray[i])
@@ -51,9 +51,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
         scrollView.delegate = self
 
-        scrollView.contentSize = CGSize(width: view.frame.size.width * 2, height: scrollView.frame.size.height)
+        scrollView.contentSize = CGSize(width: view.frame.size.width * 3, height: scrollView.frame.size.height)
 
-        for i in 0...1{
+        for i in 0...2{
 
             let onboardLabel = UILabel(frame: CGRect(x: CGFloat(i) * view.frame.size.width, y: view.frame.size.height/3, width: scrollView.frame.size.width, height: scrollView.frame.size.height))
 
@@ -65,6 +65,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
 
     }
+    
+
+    
+    
 
     
 }
