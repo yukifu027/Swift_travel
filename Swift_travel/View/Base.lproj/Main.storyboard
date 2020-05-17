@@ -74,20 +74,34 @@
             <point key="canvasLocation" x="2650.7246376811595" y="-1012.5"/>
         </scene>
         <!--マイページ-->
-        <scene sceneID="HeO-nb-1qN">
+        <scene sceneID="A4f-Jh-Ytp">
             <objects>
-                <viewController id="DPa-ad-1yx" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lFI-l8-KBy">
+                <tableViewController id="dyj-Aa-A6b" customClass="TableViewController" customModule="Swift_travel" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="y05-EL-VdK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="EWX-C0-DRY"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="マイページ" image="person" catalog="system" id="m7i-JW-tg4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sn7-zv-3m5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="128" id="dvB-GW-YwK">
+                                <rect key="frame" x="0.0" y="28" width="414" height="128"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dvB-GW-YwK" id="Tcr-un-F83">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dyj-Aa-A6b" id="eZj-Ka-t7X"/>
+                            <outlet property="delegate" destination="dyj-Aa-A6b" id="3QE-Id-UDd"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="マイページ" image="person" catalog="system" id="eij-wV-hq9"/>
+                    <navigationItem key="navigationItem" id="APb-mX-XGV"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ePp-Fi-BSS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2651" y="1113"/>
+            <point key="canvasLocation" x="2650.7246376811595" y="1125.6696428571429"/>
         </scene>
         <!--アルバム-->
         <scene sceneID="fhI-vq-JbI">
@@ -146,6 +160,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="IgL-9N-fae"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uaO-Wx-4sZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -153,7 +168,7 @@
                         <segue destination="qts-Rz-5pd" kind="relationship" relationship="viewControllers" id="pXc-D4-m34"/>
                         <segue destination="7z4-T8-iVu" kind="relationship" relationship="viewControllers" id="3Rf-ff-K8z"/>
                         <segue destination="nib-nC-4VF" kind="relationship" relationship="viewControllers" id="yHP-7E-tUY"/>
-                        <segue destination="DPa-ad-1yx" kind="relationship" relationship="viewControllers" id="efe-YS-sIc"/>
+                        <segue destination="dyj-Aa-A6b" kind="relationship" relationship="viewControllers" id="1cB-lq-JVE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zx6-ov-ish" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
