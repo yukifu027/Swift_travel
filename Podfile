@@ -7,5 +7,14 @@ target 'Swift_travel' do
 
   # Pods for Swift_travel
   pod 'lottie-ios'
+  pod 'Firebase/Auth'
+  pod 'FacebookSDK'
+  pod 'Firebase/Core'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
+  pod 'SDWebImage/WebP'
+  pod 'SegementSlide'
+  pod 'ImpressiveNotifications'
 
 end
