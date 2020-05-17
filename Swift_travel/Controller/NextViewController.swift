@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Sege
 
 
 class NextViewController: UIViewController {
