@@ -27,7 +27,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Skip"/>
                                 <connections>
-                                    <segue destination="qts-Rz-5pd" kind="show" id="Juf-Z8-Vuq"/>
+                                    <segue destination="UhY-Vj-Ugi" kind="show" id="eNs-gZ-MtD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -43,7 +43,7 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="117.85714285714285"/>
         </scene>
-        <!--Next View Controller-->
+        <!--ホーム-->
         <scene sceneID="XBn-zf-sD0">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="qts-Rz-5pd" customClass="NextViewController" customModule="Swift_travel" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,22 +51,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3js-J2-SWp">
-                                <rect key="frame" x="125" y="402" width="164" height="93"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r7I-t7-BNN">
+                                <rect key="frame" x="0.0" y="88" width="414" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="新作" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3js-J2-SWp">
+                                <rect key="frame" x="28" y="273" width="164" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="X4G-I9-vaR"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="house.fill" catalog="system" id="a3f-xu-Z2I"/>
                     <navigationItem key="navigationItem" id="I0e-Qi-AyM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bz7-gg-bn8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1763.7681159420292" y="117.85714285714285"/>
+            <point key="canvasLocation" x="2650.7246376811595" y="-1012.5"/>
+        </scene>
+        <!--マイページ-->
+        <scene sceneID="HeO-nb-1qN">
+            <objects>
+                <viewController id="DPa-ad-1yx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lFI-l8-KBy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="EWX-C0-DRY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="マイページ" image="person" catalog="system" id="m7i-JW-tg4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sn7-zv-3m5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2651" y="1113"/>
+        </scene>
+        <!--アルバム-->
+        <scene sceneID="fhI-vq-JbI">
+            <objects>
+                <viewController id="nib-nC-4VF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zdS-uY-0j2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kKz-hr-OAm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="アルバム" image="square.stack.3d.up.fill" catalog="system" id="xex-x2-F0j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLe-NA-5yp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2651" y="431"/>
+        </scene>
+        <!--検索-->
+        <scene sceneID="6kP-zf-m8d">
+            <objects>
+                <viewController id="7z4-T8-iVu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A5w-0j-Hc4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="bzm-33-d8c"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="検索" image="magnifyingglass" catalog="system" id="gVE-xD-Wmn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RzZ-KJ-1iz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2650.7246376811595" y="-305.35714285714283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ldF-GB-5aJ">
@@ -86,5 +139,32 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mnV-ua-1wI">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UhY-Vj-Ugi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="IgL-9N-fae"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uaO-Wx-4sZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qts-Rz-5pd" kind="relationship" relationship="viewControllers" id="pXc-D4-m34"/>
+                        <segue destination="7z4-T8-iVu" kind="relationship" relationship="viewControllers" id="3Rf-ff-K8z"/>
+                        <segue destination="nib-nC-4VF" kind="relationship" relationship="viewControllers" id="yHP-7E-tUY"/>
+                        <segue destination="DPa-ad-1yx" kind="relationship" relationship="viewControllers" id="efe-YS-sIc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zx6-ov-ish" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892.753623188406" y="117.85714285714285"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="square.stack.3d.up.fill" catalog="system" width="128" height="124"/>
+    </resources>
 </document>
